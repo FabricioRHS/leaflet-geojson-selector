@@ -167,6 +167,7 @@ L.Control.GeoJSONSelector = L.Control.extend({
 
 		if(selected){
 			item.selected = selected;
+			item.layer.bringToFront();
 			L.DomUtil.addClass(item, this.options.selectClass );
 		}
 	},
